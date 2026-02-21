@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Greenhouse Gas Monitor</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Greenhouse Gas Monitor</h1>
+  <nav>
+    <a href="#map">Dashboards</a>
+    <a href="#features">Features</a>
+    <a href="./gas8/index.html">Statistics</a>
+    <a href="http://127.0.0.1:5000">Smart Assistant</a>
+    <a href="../project Global Climate News-20250806T200651Z-1-001/project_Global_Climate_News/index.html">News</a>
+    <a href="#resources">Resources</a>
+    
+    
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Visualize & Analyze Emissions</h1>
+  <p>One step on our website could save thousands of trees… Try it now!.</p>
+  <button onclick="window.location.href='http://127.0.0.1:5000'">Get Started</button>
+</section>
+
+<style>
+  .dashboard-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .dashboard-item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .dashboard-item object {
+    width: 100% !important;
+    height: 900px !important; /* حجم كبير */
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .full-width object {
+    width: 100% !important;
+    height: 900px !important;
+  }
+</style>
+
+<section id="map">
+  <h2 class="dashboard-title">Dashboards</h2>
+
+  <!-- الصف الأول: داشبوردين جنب بعض -->
+  <div class="dashboard-container">
+    <!-- أول فيو: CH4 -->
+    <div class="dashboard-item">
+      <div class='tableauPlaceholder' id='viz1754845316566' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='CH4 Emissions Dashboard' src='https://public.tableau.com/static/images/CH/CH4EmissionsViz_17542375135540/CH4EmissionsDashboard/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='CH4EmissionsViz_17542375135540/CH4EmissionsDashboard' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/CH/CH4EmissionsViz_17542375135540/CH4EmissionsDashboard/1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    </div>
+
+    <!-- ثاني فيو: N2O -->
+    <div class="dashboard-item">
+      <div class='tableauPlaceholder' id='viz1754845419820' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='N2O Emissions Dashboard' src='https://public.tableau.com/static/images/N2/N2OEmissionsViz_17542379365060/N2OEmissionsDashboard/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='N2OEmissionsViz_17542379365060/N2OEmissionsDashboard' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/N2/N2OEmissionsViz_17542379365060/N2OEmissionsDashboard/1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    </div>
+  </div>
+
+  <!-- الصف الثاني: CO2 -->
+  <div class="full-width">
+    <div class='tableauPlaceholder' id='viz3' style="position: relative">
+      <noscript>
+        <a href='#'>
+          <img alt='CO2 Emissions Dashboard' src='https://public.tableau.com/static/images/BW/BWXT98963/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='path' value='shared/BWXT98963' /> 
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/BW/BWXT98963/1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+  </div>
+
+  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+</section>
+
+
+<script type='text/javascript'>
+  function initViz(id) {
+    var divElement = document.getElementById(id);
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '100%';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  }
+
+  initViz('viz1');
+  initViz('viz2');
+  initViz('viz3');
+</script>
+
+
+<section id="features">
+  <h2 class="dashboard-title" style="margin-bottom: 10px;">Core Features</h2>
+  <div class="features-grid">
+    <div class="feature-box">
+      <h3>Anthropogenic Emission Maps</h3>
+      <p>Detailed, real-time mapping of CO₂ and CH₄ emissions from human activities.</p>
+    </div>
+    <div class="feature-box">
+      <h3>High-Emission Alerts</h3>
+      <p>Automated alerts for abnormal emission spikes with severity colors.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Natural Source Analysis</h3>
+      <p>Data visualization for forests, oceans, and volcanic activity emissions.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Event Tracking</h3>
+      <p>Animated maps showing methane leaks and dispersion forecasts.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Custom Dashboard</h3>
+      <p>Personalized dashboard with live data, charts, and history.</p>
+    </div>
+    <div class="feature-box">
+      <h3>API Connectivity</h3>
+      <p>Integration with NASA, ESA, and Copernicus datasets.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="resources">
+  <h2 class="dashboard-title" style="margin-bottom: 20px;">Resources</h2>
+  <div class="resources-grid">
+    <div class="resource-item nasa">
+      <h3>NASA Earth Observatory</h3>
+      <a href="https://earthobservatory.nasa.gov/" target="_blank" class="read-more">Visit Site</a>
+    </div>
+    <div class="resource-item esa">
+      <h3>ESA Climate Change Initiative</h3>
+      <a href="https://climate.esa.int/en/" target="_blank" class="read-more">Visit Site</a>
+    </div>
+    <div class="resource-item copernicus">
+      <h3>Copernicus Atmosphere Monitoring Service</h3>
+      <a href="https://atmosphere.copernicus.eu/" target="_blank" class="read-more">Visit Site</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.resources-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.resource-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.resource-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* تغميق بسيط للصورة عشان الكلام يكون واضح */
+}
+
+.resource-item h3,
+.resource-item .read-more {
+  position: relative;
+  z-index: 1;
+}
+
+.nasa {
+  background-image: url("ISS072-E-896652.jpg");
+}
+
+.esa {
+  background-image: url("hklmno.jpg");
+}
+
+.copernicus {
+  background-image: url("iStock-172330607_crop2.webp");
+}
+
+.read-more {
+  background: rgba(0, 255, 100, 0.2);
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #0f0;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background: rgba(0, 255, 100, 0.4);
+}
+</style>
+
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-container">
+
+    <!-- Contact -->
+    <div class="footer-col contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> online services locally and globally.</p>
+      <p><i class="fas fa-phone-alt"></i> +20 106-082-3036</p>
+      <a href="https://linktr.ee/1Elite_team" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i> linktr.ee/1Elite_team
+      </a>
+    </div>
+
+    <!-- Form -->
+    <div class="footer-col form">
+      <h3>Need Help or Found an Issue?</h3>
+      <p>Tell us about your issue or suggestion. We’re here to make things better.</p>
+      <form action="https://formspree.io/f/xldlnqqw" method="POST" class="contact-form" novalidate>
+        <input type="email" name="email" placeholder="Your email address" required />
+        <textarea name="message" placeholder="Write your message here..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="http://127.0.0.1:5000">Smart Assistant</a></li>
+        <li><a href="../project Global Climate News-20250806T200651Z-1-001/project_Global_Climate_News/index.html">News</a>
+        <li><a href="./gas8/index.html">Statistics</a></li>
+        <li><a href="#Resources"></a>Resources</li>
+        
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
